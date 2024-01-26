@@ -611,7 +611,7 @@
 
     img {
       background-color: #808080; /* fallback in case of image loading failure */
-      background-image: url("/transparency_checkerboard.webp");
+      background-image: url("transparency_checkerboard.webp");
       max-width: 100%;
     }
     button,
@@ -623,7 +623,7 @@
       margin: 0;
     }
   `;Te([hn({attribute:!1})],wt.prototype,"imageUrl",2);Te([hn({attribute:!1})],wt.prototype,"description",2);Te([Zt("img")],wt.prototype,"image",2);wt=Te([qi("image-throttler")],wt);async function Pa(s){const e=await(await fetch(s)).blob();return new Promise((i,r)=>{try{const n=new FileReader;n.onload=function(){i(this.result)},n.readAsArrayBuffer(e)}catch(n){r(n)}})}function Ia(s,t){let e="";const i=new Uint8Array(s),r=Math.min(i.byteLength,t);for(let n=0;n<r;n++)e+=String.fromCharCode(i[n]);return window.btoa(e)}var Ua=Object.defineProperty,Ha=Object.getOwnPropertyDescriptor,Na=(s,t,e,i)=>{for(var r=i>1?void 0:i?Ha(t,e):t,n=s.length-1,o;n>=0;n--)(o=s[n])&&(r=(i?o(t,e,r):o(r))||r);return i&&r&&Ua(t,e,r),r};let ki=class extends it{render(){return _e`<data-progress-bar></data-progress-bar>
-      <div id="images">${[["/rainbow.png","PNG - 699144 bytes"],["/rainbow.jpg","JPG quality 100 - 460047 bytes"],["/rainbow_progressive.jpg","JPG quality 100 progressive - 426041 bytes"]].map(e=>_e`<image-throttler
+      <div id="images">${[["rainbow.png","PNG - 699144 bytes"],["rainbow.jpg","JPG quality 100 - 460047 bytes"],["rainbow_progressive.jpg","JPG quality 100 progressive - 426041 bytes"]].map(e=>_e`<image-throttler
           .imageUrl="${e[0]}"
           .description="${e[1]}"
         ></image-throttler>`)}</div>`}};ki.styles=Gi`
