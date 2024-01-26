@@ -1,0 +1,23 @@
+{
+  "name": "progressive_incremental_image_decoding",
+  "version": "0.1.0",
+  "description": "Progressive and incremental image decoding demo",
+  "publisher": "Google LLC",
+  "author": "Yannis Guyon",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview --open"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.6"
+  },
+  "dependencies": {
+    "@material/mwc-fab": "^0.27.0",
+    "@material/mwc-slider": "^0.27.0",
+    "lit": "^3.1.0"
+  }
+}
